@@ -16,7 +16,7 @@ n1 = st.number_input("Size of the first group:", min_value=float(2), max_value=f
 n2 = st.number_input("Size of the second group:", min_value=float(2), max_value=float(10000000000), value=float(100),
                      step=float(1))
 
-t = (m1 - m2) / np.sqrt(s1 ** 2 / n1 + s2 ** 2 / n2)
+t = round((m1 - m2) / np.sqrt(s1 ** 2 / n1 + s2 ** 2 / n2), 2)
 
 df = n1 + n2 - 2
 ci = st.radio("Choose significance level: ", ('95%', '99%'))
