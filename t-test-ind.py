@@ -19,7 +19,7 @@ n2 = st.number_input("Size of the second group:", min_value=float(2), max_value=
 t = (m1 - m2) / np.sqrt(s1 ** 2 / n1 + s2 ** 2 / n2)
 
 df = n1 + n2 - 2
-ci = st.radio("Choose significane level: ", ('95', '99'))
+ci = st.radio("Choose significance level: ", ('95%', '99%'))
 sig_99 = 'The test is significant at the 99% level'
 not_sig_99 = 'The test is not significant at the 99% level'
 sig_95 = 'The test is significant at the 95% level'
