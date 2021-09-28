@@ -336,6 +336,6 @@ def test_sig(df, t):
 
 message = test_sig(df, t)
 
-st.write('t = ' + t + ' ' + message)
+st.write('t = ' + str(t) + ' ' + message)
 
 # tabela za znacajnost - videti kako se odredjuju stepeni slobode
